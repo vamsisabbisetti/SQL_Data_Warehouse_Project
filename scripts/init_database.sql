@@ -1,6 +1,11 @@
 /*
-Creating database 'DataWarehouse' in sql_server
-Creating schema brone,silver,gold in sql_server
+==========================================================================
+Create Database and Schemas
+==========================================================================
+Script purpose:
+	The script creates a new database named 'DataWarehouse after checking if it alrerady exists.
+	If the database exists. it is dropped and recreated. Additionalyt, the scripts sets up there schemas
+	within the database: 'bronze','silver', and 'gold'
 
 Warning:
   Running the script will drop the entire 'DataWarehouse' databse if exists.
@@ -35,7 +40,5 @@ Go
 
 CREATE SCHEMA gold;
 Go
-
-
 
 
