@@ -1,6 +1,6 @@
 /*
 Creating database 'DataWarehouse' in sql_server
-Creating schema brone,silver,gold
+Creating schema brone,silver,gold in sql_server
 
 Warning:
   Running the script will drop the entire 'DataWarehouse' databse if exists.
