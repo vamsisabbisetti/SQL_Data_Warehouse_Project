@@ -40,10 +40,10 @@ DECLARE @start_time DATETIME,@end_time DATETIME,@batch_start_time DATETIME,@batc
 		Insert into silver.crm_cust_info(cst_id,cst_key,cst_firstname,cst_lastname,cst_material_status,cst_gndr,cst_create_date)
 
 		select cst_id,cst_key,TRIM(cst_firstname) as cst_firstname ,Trim(cst_lastname) as cst_lastname,
-		CASE WHEN UPPER(TRIM(cst_material_status))='M' THEN 'Married'
-			 WHEN UPPER(TRIM(cst_material_status))='S' THEN 'Single'
+		CASE WHEN UPPER(TRIM(cst_marital_status))='M' THEN 'Married'
+			 WHEN UPPER(TRIM(cst_marital_status))='S' THEN 'Single'
 			 else 'n/a'
-		END as cst_material_status,--Normalize material status values to readable format
+		END as cst_marital_status,--Normalize material status values to readable format
 		CASE WHEN UPPER(TRIM(cst_gndr))='M' THEN 'Male'
 			 WHEN UPPER(TRIM(cst_gndr))='F' THEN 'Female'
 			 else 'n/a'
