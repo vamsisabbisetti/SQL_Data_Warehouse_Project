@@ -35,27 +35,3 @@ SQL Server | MySQL | ETL | Data Warehousing | Star Schema | Power BI | Tableau
 ✔ Data Cleansing & Transformation
 ✔ Dimensional Data Modeling
 ✔ Analytics-ready Data Warehouse Solution
-
-**Repo structure:**
-data-warehouse-project/
-│
-├── datasets/
-│   ├── source_crm/
-│   └── source_erp/
-│
-├── scripts/
-│   ├── bronze/
-│   │   ├── bronze_load.sql
-│   │
-│   ├── silver/
-│   │   ├── silver_load.sql
-│   │
-│   └── gold/
-│       ├── gold_load.sql
-│
-├── docs/
-│   ├── architecture_diagram.png
-│   ├── data_flow.png
-│   └── star_schema.png
-│
-└── README.md
